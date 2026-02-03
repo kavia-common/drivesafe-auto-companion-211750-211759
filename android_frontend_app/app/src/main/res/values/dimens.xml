@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="tile_min_height">120dp</dimen>
+    <dimen name="tile_corner_radius">18dp</dimen>
+    <dimen name="tile_padding">18dp</dimen>
+    <dimen name="grid_gap">14dp</dimen>
+
+    <dimen name="mic_button_height">72dp</dimen>
+    <dimen name="mic_button_corner_radius">28dp</dimen>
+
+    <dimen name="title_text_size">26sp</dimen>
+    <dimen name="tile_text_size">22sp</dimen>
+    <dimen name="status_text_size">16sp</dimen>
+</resources>

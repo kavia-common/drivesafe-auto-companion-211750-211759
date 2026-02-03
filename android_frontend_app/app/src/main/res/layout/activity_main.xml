@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ds_bg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Status strip -->
+    <TextView
+        android:id="@+id/statusText"
+        style="@style/DriveSafe.StatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status_ready"
+        android:paddingBottom="12dp" />
+
+    <!-- Dashboard grid -->
+    <GridLayout
+        android:id="@+id/tileGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:useDefaultMargins="false">
+
+        <Button
+            android:id="@+id/tileMusic"
+            style="@style/DriveSafe.Tile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginEnd="@dimen/grid_gap"
+            android:layout_marginBottom="@dimen/grid_gap"
+            android:text="@string/tile_music" />
+
+        <Button
+            android:id="@+id/tileNavigation"
+            style="@style/DriveSafe.Tile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginStart="@dimen/grid_gap"
+            android:layout_marginBottom="@dimen/grid_gap"
+            android:text="@string/tile_navigation" />
+
+        <Button
+            android:id="@+id/tileCalls"
+            style="@style/DriveSafe.Tile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginEnd="@dimen/grid_gap"
+            android:layout_marginTop="@dimen/grid_gap"
+            android:text="@string/tile_calls" />
+
+        <Button
+            android:id="@+id/tileMessages"
+            style="@style/DriveSafe.Tile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginStart="@dimen/grid_gap"
+            android:layout_marginTop="@dimen/grid_gap"
+            android:text="@string/tile_messages" />
+    </GridLayout>
+
+    <!-- Persistent voice mic button (hold-to-talk) -->
+    <Button
+        android:id="@+id/micButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mic_button_height"
+        android:background="@drawable/bg_mic_button"
+        android:text="@string/mic_button"
+        android:textColor="@color/ds_surface2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp" />
+</LinearLayout>

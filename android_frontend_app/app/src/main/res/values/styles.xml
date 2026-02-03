@@ -1,0 +1,27 @@
+<resources>
+    <!-- Primary app theme -->
+    <style name="Theme.DriveSafe" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/ds_bg</item>
+        <item name="android:textColor">@color/ds_text</item>
+        <item name="android:statusBarColor">@color/ds_bg</item>
+        <item name="android:navigationBarColor">@color/ds_bg</item>
+    </style>
+
+    <!-- Backwards-compatible alias (some builds/tools may refer to @style/DriveSafe) -->
+    <style name="DriveSafe" parent="@style/Theme.DriveSafe" />
+
+    <style name="DriveSafe.Tile">
+        <item name="android:background">@drawable/bg_tile</item>
+        <item name="android:padding">@dimen/tile_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/ds_text</item>
+        <item name="android:textSize">@dimen/tile_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/tile_min_height</item>
+    </style>
+
+    <style name="DriveSafe.StatusText">
+        <item name="android:textColor">@color/ds_muted</item>
+        <item name="android:textSize">@dimen/status_text_size</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DriveSafe Auto Companion</string>
+
+    <string name="tile_music">Music</string>
+    <string name="tile_navigation">Navigation</string>
+    <string name="tile_calls">Calls</string>
+    <string name="tile_messages">Messages</string>
+
+    <string name="mic_button">Hold to Talk</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_processing">Processing…</string>
+
+    <string name="toast_spotify_not_installed">Spotify not installed.</string>
+    <string name="toast_maps_not_available">Google Maps not available.</string>
+    <string name="toast_whatsapp_not_installed">WhatsApp not installed.</string>
+    <string name="toast_no_speech_recognition">Speech recognition not available on this device.</string>
+    <string name="toast_permission_required">Permission required: %1$s</string>
+</resources>
